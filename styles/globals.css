@@ -105,3 +105,16 @@ a {
     color-scheme: dark;
   }
 }
+
+.site-layout-content {
+  max-height: calc(100vh - 60px);
+  color: black;
+  height: 100vh;
+}
+
+.__header {
+  position: 'sticky'!important;
+  top: 0!important;
+  z-index: 1!important;
+  width: '100%'!important;
+}
