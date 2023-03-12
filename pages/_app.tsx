@@ -34,6 +34,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="icon" href="favicon.ico" />
         <meta name="description" content="Mopster Cleaning company is a first-rate cleaning company with over 4years of experience in janitorial and commercial cleaning service in UAE. With our company, your satisfaction is guaranteed. You can have full confidence in choosing our team." />
+        <meta name="keywords" content="Cleaning services, homeservice, cleaning, experienced cleaning, cleaning UAE" />
+        <meta property="og:image" content="logo.jpg"/>
+        <meta property="og:title" content='Mopster Cleaning Services'/>
+        <meta property="og:url" content='/'/>
+        <meta property="og:description" content="Mopster Cleaning company is a first-rate cleaning company with over 4years of experience in janitorial and commercial cleaning service in UAE. With our company, your satisfaction is guaranteed. You can have full confidence in choosing our team." />
       </Head>
       <Layout>
         <Spin spinning={isLoading}>
