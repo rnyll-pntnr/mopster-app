@@ -109,7 +109,7 @@ a {
 .site-layout-content {
   max-height: calc(100vh - 60px);
   color: black;
-  height: 100vh;
+  height: 90svh;
 }
 
 .__header {
@@ -117,4 +117,10 @@ a {
   top: 0!important;
   z-index: 1!important;
   width: '100%'!important;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
 }

@@ -17,8 +17,8 @@ export default function FooterPartial() {
                 backgroundColor: '#333',
                 color: '#fff'
             }}>
-                <Row>
-                    <Col span={8}>
+                <Row justify={'space-around'}>
+                    <Col span={10}>
                         <div className="space-align-container">
                             <div className="space-align-block">
                                 <Space align='baseline'>
@@ -41,10 +41,9 @@ export default function FooterPartial() {
                             </div>
                         </div>
                     </Col>
-                    <Col span={4}>
-                    </Col>
+                    <Col span={4}></Col>
 
-                    <Col span={8}>
+                    <Col span={10}>
                         <h1>CONTACT INFORMATION</h1>
                         <p>
                             Phone: <a href="tel:+97150470083">+971 50 470083</a>

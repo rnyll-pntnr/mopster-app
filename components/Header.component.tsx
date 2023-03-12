@@ -19,12 +19,12 @@ export default function HeaderPartial() {
     const router = useRouter()
 
     useEffect(() => {
-        if (selectedKey !== window.location.pathname) {
+        if (selectedKey != window.location.pathname) {
             setSelectedKey(window.location.pathname)
         }
     },[selectedKey])
 
-    const linkRouter = async (e: any) => {
+    const linkRouter = (e: any) => {
         setSelectedKey(e.key)
         return router.push(e.key)
     }
@@ -49,20 +49,17 @@ export default function HeaderPartial() {
         <>
             <Header className='__header'>
                 {/* Image Here */}
-                <div
-                    style={{
-                        float: 'left',
-                        width: 120,
-                        height: 31,
-                        margin: '16px 24px 16px 0'
-                    }}>
                     <Image
+                        className='logo'
                         src={logo.src}
                         alt="Logo"
                         width={120}
                         height={40}
+                        style={{
+                            float: 'left',
+                            marginTop: '5px'
+                        }}
                     />
-                </div>
                 {/* This is the menu */}
                 <Menu
                 theme='dark'
